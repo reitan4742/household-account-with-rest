@@ -1,0 +1,75 @@
+import { IncomeController } from "./controller/IncomeController"
+import { PurchaseController } from "./controller/PurchaseController"
+import { UserController } from "./controller/UserController"
+
+export const Routes = [{
+    method: "get",
+    route: "/users",
+    controller: UserController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/users/:id",
+    controller: UserController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/users",
+    controller: UserController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/users/:id",
+    controller: UserController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/purchases",
+    controller: PurchaseController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/purchases/:id",
+    controller: PurchaseController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/purchases",
+    controller: PurchaseController,
+    action: "save"
+}, {
+    method: "put",
+    route: "/purchases/:id",
+    controller: PurchaseController,
+    action: "update"
+}, {
+    method: "delete",
+    route: "/purchases/:id",
+    controller: PurchaseController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/incomes",
+    controller: IncomeController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/incomes/:id",
+    controller: IncomeController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/incomes",
+    controller: IncomeController,
+    action: "save"
+}, {
+    method: "put",
+    route: "/incomes/:id",
+    controller: IncomeController,
+    action: "update"
+}, {
+    method: "delete",
+    route: "/incomes/:id",
+    controller: IncomeController,
+    action: "remove"
+}];
